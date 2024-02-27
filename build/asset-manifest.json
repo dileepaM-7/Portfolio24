@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8731da0b.css",
+    "main.js": "/static/js/main.a89cec8b.js",
+    "static/media/dileepa.png": "/static/media/dileepa.dee2017f199feb6e6e2d.png",
+    "static/media/react.png": "/static/media/react.259514c7863ded2e5515.png",
+    "static/media/python.png": "/static/media/python.dea924d737bb84eb9ce3.png",
+    "static/media/html5.png": "/static/media/html5.8db09e72ff176f0187e4.png",
+    "static/media/dileepa-logo.png": "/static/media/dileepa-logo.aaaedadd2d0798e84638.png",
+    "static/media/java.png": "/static/media/java.9f782aff1a56deda4682.png",
+    "static/media/mail.png": "/static/media/mail.f628a8f768c64821ae3d.png",
+    "static/media/linkedin.png": "/static/media/linkedin.cd71fb396f73fb1f27d4.png",
+    "static/media/github.png": "/static/media/github.82a2a3af04b3e67185a0.png",
+    "static/media/js.png": "/static/media/js.266bd9fb2663dcc057b4.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.8731da0b.css.map": "/static/css/main.8731da0b.css.map",
+    "main.a89cec8b.js.map": "/static/js/main.a89cec8b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8731da0b.css",
+    "static/js/main.a89cec8b.js"
+  ]
+}
