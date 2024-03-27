@@ -5,6 +5,7 @@ import github from "../../assets/github.png";
 import linkedin from "../../assets/linkedin.png";
 import email from "../../assets/mail.png";
 import ContactForm from './ContactForm/ContactForm';
+import phone from '../../assets/pngtree-circle-phone-call-icon-in-black-color-png-image_8997757.png'
 
 
 const ContactMe = () => {
@@ -26,6 +27,11 @@ const ContactMe = () => {
                 iconUrl={linkedin}
                 text={"Dileepa Malshan"}
                 link={"https://www.linkedin.com/in/dileepa-malshan-998908292/"}
+                />
+                <ContactInfoCard
+                iconUrl={phone}
+                text={"+94 77 361 3102"}
+                link={""}
                 />
             </div>
             <div style={{ flex:1 }}>

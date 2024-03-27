@@ -12,9 +12,21 @@ const ProjecCard = ({ details }) => {
       <ul>
         {details.description.map((item) => (
           <li key={item}>{item}</li>
-          
         ))}
       </ul>
+      <div className='github-button'>
+        {details.Github && (
+          <a href={details.Github} target="_blank" rel="noreferrer">
+            <button className="btn">Github Link</button>
+          </a>
+        )}
+        <br />
+        {details.App&& (
+          <a href={details.App} target="_blank" rel="noreferrer">
+            <button className="btn">App</button>
+          </a>
+        )}
+      </div>
     </div>
   )
 }

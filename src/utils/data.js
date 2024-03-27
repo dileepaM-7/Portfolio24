@@ -41,28 +41,36 @@ export const SKILLS = [
 
 export const PROJECTS = [
     {
-        title: "Movie Ticket Booking System in Java",
-        keycomponents: "Java programming, user interface design,booking logic.",
+        title: "HappyPaws Project ",
+        keycomponents: "ReactJs , Firebase , Python , Flask",
         description: [
-            "Developed a Java program that allows users to book movie tickets.",
-            "The system likely includes features such as choosing seats and completing the booking process.",
+            "Developed a full stack web app by react,  python and firebase database.",
+            " Trained the ML model using python",
+            " Integrated Ml model to the front end by Flask",
+            "Deployed both Ml model and Frontend"
         ],
+        Github:"https://github.com/dileepaM-7/SDGP-HappyPaws.git",
+        App:"https://sdgp-happy-paws.vercel.app"
     },
     {
-        title: "Movie Website using HTML, CSS and JS",
-        keycomponents: "HTML for content structure, CSS for styling, and possibly responsive design for different devices..",
-        description: [ 
-            "Designed and implemented a website using HTML for structuring and CSS for styling.",
-            "Added some Java Script functions also, This project involves creating a visually appealing and responsive web interface.",
+        title: "Yoga Project (MERN)",
+        keycomponents: "Mongodb, ExpressJs, ReactJs, NodeJs",
+        description: [
+            "Developed a full stack web app by react, Nodejs, ExpressJs and by Mongodb.",
+            " Where the users can logging as a yoga instructor or a student",
+            " Hosted using vercel",
         ],
+        Github:"https://github.com/dileepaM-7/yoga-master.git",
+        
     },
     {
-        title: "OOP Product Buying System in Java with Java Swing",
+        title: "Java (OOP) Product Buying System in Java with Java Swing",
         keycomponents: "Java OOP, Java Swing UI, Event Handling",
         description: [
             "Created a Java program using Object-Oriented Programming to simulate a product buying system.",
             "The user interacts with a graphical interface built with Java Swing",
         ],
+        Github:"https://github.com/dileepaM-7/OOP-CourseWork-2024.git",
     },
     {
         title: "Portfolio using React",
@@ -71,21 +79,14 @@ export const PROJECTS = [
             "Built a personal portfolio using the React framework, showcasing skills, projects, and other relevant information.",
             " React is a JavaScript library for building user interfaces, commonly used for creating dynamic and interactive web applications.",
         ],
+        Github:"https://github.com/dileepaM-7/Portfolio24.git",
     },
     {
-        title: "SDGP Happy paws project",
-        keycomponents: "Front-end, Back-end, DataBase (FUll Stack)",
+        title: "Movie Ticket Booking System in Java",
+        keycomponents: "Java programming, user interface design,booking logic.",
         description: [
-            "Developed a full stack web app by react, nodejs, python and firebase database.",
-            " Trained the ML model using python",
-        ],
-    },
-    {
-        title: " Python Program for University Coursework",
-        keycomponents: "Python programming",
-        description: [
-            "Created a basic Python program as part of university coursework.",
-            " The program could be related to a specific subject or problem given by the coursework requirements.",
+            "Developed a Java program that allows users to book movie tickets.",
+            "The system likely includes features such as choosing seats and completing the booking process.",
         ],
     },
 ]
