@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com'; // Import emailjs library
 import './ContactForm.css';
 
 const ContactForm = () => {
@@ -9,29 +10,36 @@ const ContactForm = () => {
     message: '',
   });
 
+  // State for controlling success/error message display
+  const [message, setMessage] = useState('');
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    try {
-      const response = await fetch('/.netlify/functions/sendEmail', {
-        method: 'POST',
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        console.log('Email sent successfully');
-        // Optionally, you can reset the form here
-      } else {
-        console.error('Error sending email');
-      }
-    } catch (error) {
-      console.error('Error sending email:', error);
-    }
+    emailjs.sendForm('service_cs062jr', 'template_vfzpzod', e.target, '2TpRNCAPQiap8Ep_t')
+      .then(
+        (result) => {
+          // Handle success
+          console.log('Email sent successfully:', result.text);
+          setMessage('Email sent successfully!');
+          // Clear form data
+          setFormData({
+            firstname: '',
+            lastname: '',
+            email: '',
+            message: '',
+          });
+        },
+        (error) => {
+          // Handle errors
+          console.error('Error sending email:', error);
+          setMessage('Error sending email. Please try again later.');
+        }
+      );
   };
 
   return (
@@ -71,6 +79,7 @@ const ContactForm = () => {
         ></textarea>
         <button type="submit">SEND</button>
       </form>
+      {message && <p>{message}</p>} {/* Display success/error message */}
     </div>
   );
 };
